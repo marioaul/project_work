@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" color="blue">
+  <title>Servizio di Prenotazione Trasporti</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Servizio di Prenotazione Trasporti</h1>
+  </header>
+  <main>
+    <section class="booking-section">
+      <h2>Prenota la tua corsa</h2>
+      <form id="bookingForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Orario:</label>
+        <input type="time" id="time" name="time" required>
+
+        <button type="submit">Prenota</button>
+      </form>
+    </section>
+
+    <section class="bookings-list">
+      <h2>Le tue prenotazioni</h2>
+      <ul id="bookingList">
+        <!-- Le prenotazioni verranno mostrate qui -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- 
+  <footer>
+    <p>&copy; 2025 Servizio di Trasporto Locale</p>
+  </footer>
+  -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
